@@ -72,3 +72,11 @@ Export page structure as importable XML (CIF) file from CSV file.
 * `attr_` Page attribute
   * `attr_select_` type: Select
   * `attr_file_` type: File
+
+## ToDo
+
+* Multiple select value
+
+## License
+
+The MIT License.
