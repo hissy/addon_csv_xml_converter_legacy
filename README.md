@@ -76,6 +76,7 @@ Export page structure as importable XML (CIF) file from CSV file.
 ## ToDo
 
 * Multiple select value
+* Import block contents
 
 ## License
 
