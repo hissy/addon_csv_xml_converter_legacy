@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <singlepages>
+        <page name="CSV to XML" path="/dashboard/system/backup_restore/csv_xml" filename="/dashboard/system/backup_restore/csv_xml.php" pagetype="" description="" package="csv_xml_converter" />
+    </singlepages>
+</concrete5-cif>
