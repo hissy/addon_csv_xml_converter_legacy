@@ -49,6 +49,9 @@ class DashboardSystemBackupRestoreCsvXmlController extends DashboardBaseControll
 							$p->addAttribute($key, h($v));
 						}
 					}
+					if (!isset($p['pagetype']) || empty($p['pagetype'])) {
+    					throw new Exception(t('page_pagetype is required.'));
+					}
 					if (empty($p['path']) && !empty($p['name'])) {
 						$p->addAttribute('path', '/' . Loader::helper('text')->urlify($p['name']));
 					}
@@ -88,9 +91,9 @@ class DashboardSystemBackupRestoreCsvXmlController extends DashboardBaseControll
 					
 					// Import the block data for the page
 					foreach ($r as $k => $v) {
-						if (substr($k, 0, strlen(self::PREFIX_BLOCK)) == self::PREFIX_BLOCK) {
+						if (substr($k, 0, strlen(self::PREFIX_BLOCK)) == self::PREFIX_BLOCK && !empty($v)) {
     						
-							// Get the block key
+							// Get the key
 							$key = substr($k, strlen(self::PREFIX_BLOCK));
 							
 							// Split the key to Area//BlockType
