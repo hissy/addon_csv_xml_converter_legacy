@@ -1,0 +1,11 @@
+{
+    "require": {
+        "parsecsv/php-parsecsv": "0.4.5"
+    },
+    "authors": [
+        {
+            "name": "Takuro Hishikawa",
+            "email": "hishikawa@concrete5.co.jp"
+        }
+    ]
+}
