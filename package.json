@@ -1,0 +1,15 @@
+{
+  "name": "addon_csv_xml_converter",
+  "description": "Export the page structure for your concrete5 site as importable XML (CIF) file from CSV file.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hissy/addon_csv_xml_converter.git"
+  },
+  "author": "Takuro Hishikawa <hishikawa@concrete5.co.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-zip": "latest",
+    "gulp-composer": "latest"
+  }
+}
